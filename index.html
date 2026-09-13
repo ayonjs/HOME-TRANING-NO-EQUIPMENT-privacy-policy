@@ -88,7 +88,7 @@
     <div class="hero">
       <p class="eyebrow">Home Training — No Equipment</p>
       <h1>Privacy Policy</h1>
-      <p class="summary">This policy explains how the Android app handles local workout data, optional account and subscription data, advertising data, and your privacy choices.</p>
+      <p class="summary">This policy explains how the Android app handles local workout data, advertising data, and your privacy choices. The app has no login system or paid subscription mode.</p>
       <span class="updated">Effective 10 September 2026</span>
     </div>
   </header>
@@ -103,7 +103,7 @@
         <li><a href="#permissions">Permissions</a></li>
         <li><a href="#ads">Advertising</a></li>
         <li><a href="#choices">Your choices</a></li>
-        <li><a href="#account-deletion">Account deletion</a></li>
+        <li><a href="#account-deletion">Deleting local data</a></li>
         <li><a href="#children">Children</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -111,7 +111,7 @@
 
     <section id="overview" class="notice">
       <h2>Overview</h2>
-      <p>You can use the core workouts offline and without an account. Sign-in is optional for free training. Free users may receive Google AdMob ads when online and after applicable privacy choices. Verified Pro subscribers do not receive ad requests.</p>
+      <p>You can use every workout offline. The app has no account creation, login, cloud sync, in-app purchases, or paid subscription mode. When the device is online, the app may request Google AdMob ads after applicable privacy choices.</p>
       <p>The app does not include a separate analytics or crash-reporting SDK. Google Mobile Ads nevertheless processes ad interactions and diagnostics for advertising, measurement, analytics and fraud prevention as described below. The app does not request access to contacts, camera, microphone or location. Notification permission is requested only if you enable workout reminders.</p>
     </section>
 
@@ -128,8 +128,6 @@
           <thead><tr><th>Data</th><th>Purpose</th><th>Where it goes</th><th>Retention</th></tr></thead>
           <tbody>
             <tr><td>Workout and fitness information: history, favorites, custom routines and active session; plus theme, sound, voice and reminder settings</td><td>Provide and personalize training features</td><td>Stored locally on your device; not collected by the operator or sent to AdMob</td><td>Until you clear app storage or uninstall</td></tr>
-            <tr><td>Email address and authentication/session data, if you sign in</td><td>Create the optional account, authenticate you and support account deletion</td><td>Supabase Auth and app-private encrypted storage</td><td>Until account deletion, expiry, or as required for security/legal obligations</td></tr>
-            <tr><td>Subscription product, purchase token, status and expiry</td><td>Verify, restore and maintain Pro access</td><td>Google Play and the configured Supabase backend</td><td>For the subscription lifecycle and required financial/security records</td></tr>
             <tr><td>IP address (which may estimate general location), advertising ID, app-set ID and other device/account identifiers; app launches, taps, video views and other ad/product interactions; performance and diagnostic information</td><td>Ad delivery, frequency control, advertising, analytics, measurement, security and fraud prevention</td><td>Collected and shared automatically by Google Mobile Ads with Google and authorized advertising partners, subject to consent and regional choices</td><td>Under Google's applicable retention rules and controls</td></tr>
           </tbody>
         </table>
@@ -140,17 +138,16 @@
     <section id="permissions">
       <h2>Android permissions and device access</h2>
       <ul>
-        <li><strong>Internet and network state:</strong> optional sign-in, subscription verification, privacy messaging and ads when online. Core workouts remain available offline.</li>
+        <li><strong>Internet and network state:</strong> privacy messaging, opening public policy links, and ads when online. Workouts remain available offline.</li>
         <li><strong>Notifications:</strong> requested at runtime only if you enable workout reminders; you can deny or revoke it in Android settings.</li>
         <li><strong>Advertising ID:</strong> declared by Google Mobile Ads for advertising, measurement and fraud prevention. Android lets you reset or delete this identifier.</li>
-        <li><strong>Google Play Billing:</strong> used to offer and restore Pro subscriptions through Google Play.</li>
       </ul>
       <p>The app does not request contacts, calendar, camera, microphone, SMS, call logs, precise or approximate location, activity-recognition, body-sensor, Bluetooth or storage/media-library permissions.</p>
     </section>
 
     <section id="ads">
       <h2>Google AdMob and advertising</h2>
-      <p>Online free users may see an anchored banner on browsing screens, one interstitial only at the natural break after completing a workout, and a frequency-limited app-open ad on a later safe return to the app. App-open ads are not shown on first launch or during workouts. Ads are not placed on loading/empty screens or where they overlap navigation controls, and full-screen ads are not stacked over other ads. A missing or declined ad never blocks a workout.</p>
+      <p>Online users may see an anchored banner on browsing screens, one interstitial only at the natural break after completing a workout, and a frequency-limited app-open ad on a later safe return to the app. App-open ads are not shown on first launch or during workouts. Ads are not placed on loading or empty screens or where they overlap navigation controls, and full-screen ads are not stacked over other ads. A missing or declined ad never blocks a workout.</p>
       <p>The app uses Google Mobile Ads and Google's User Messaging Platform (UMP). Depending on region and your choices, Google and its partners may process identifiers and usage data for personalized, non-personalized or limited advertising, measurement, analytics, security and fraud prevention. Learn more in <a href="https://policies.google.com/technologies/partner-sites">Google's partner-sites notice</a>, <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads' Play data disclosure</a>.</p>
       <h3>EEA, UK and Switzerland</h3>
       <p>The app asks UMP to update consent information at launch and requests ads only when UMP reports that ads may be requested. Where required, UMP displays a Google-certified consent message. If Google indicates that a privacy-options entry point is required, the app shows <strong>Settings → Ad privacy choices</strong> so you can revisit or withdraw choices.</p>
@@ -162,9 +159,7 @@
     <section id="sharing">
       <h2>Service providers and data sharing</h2>
       <ul>
-        <li><strong>Google Play</strong> processes subscription purchases, billing, cancellations and refunds.</li>
         <li><strong>Google AdMob</strong> processes advertising data as described above.</li>
-        <li><strong>Supabase</strong> hosts optional authentication and server-verified subscription records when the publisher configures those services.</li>
       </ul>
       <p>We share data only to operate these requested features, comply with law, protect users and services, or complete a business transfer with appropriate safeguards. We do not provide workout history to advertisers.</p>
     </section>
@@ -172,7 +167,7 @@
     <section id="choices">
       <h2>Your choices and rights</h2>
       <ul>
-        <li>Use workouts offline and without signing in.</li>
+        <li>Use every workout offline; no account is required or available.</li>
         <li>Decline optional notification permission or disable reminders in Settings.</li>
         <li>Use <strong>Settings → Ad privacy choices</strong> when UMP says the option is required.</li>
         <li>Reset or delete the Android advertising ID in device privacy settings.</li>
@@ -180,29 +175,29 @@
         <li>Request access, correction, deletion, restriction or portability where applicable by emailing us.</li>
         <li>Object to or withdraw consent for consent-based processing, and complain to your local data-protection authority where applicable.</li>
       </ul>
-      <p>We may need to verify your identity before fulfilling an account-related request. Rights and exceptions vary by jurisdiction.</p>
+      <p>We may need enough information to understand and verify a privacy request. Rights and exceptions vary by jurisdiction.</p>
       <p>Depending on where you live, these may include rights under the GDPR/UK GDPR, California and other applicable US-state privacy laws, India's Digital Personal Data Protection framework, or similar laws. We will respond in accordance with the law that applies to the verified request.</p>
     </section>
 
     <section id="account-deletion">
-      <h2>Account deletion</h2>
-      <p><strong>You can request account and associated-data deletion without reinstalling the app.</strong> Email <a href="mailto:ayonmallick123@gmail.com?subject=Delete%20my%20training%20account">ayonmallick123@gmail.com</a> from the account email with the subject “Delete my training account.” In the app, you can also open <strong>Settings → Account → Delete account</strong> and confirm. Do not send a password, one-time code, payment card or purchase secret.</p>
-      <p>A configured deletion request removes the Supabase account and associated profile and entitlement rows. It does not automatically cancel a recurring Google Play subscription; manage cancellation separately in Google Play. Local workout data remains on the device until you clear app storage or uninstall.</p>
+      <h2>Deleting local app data</h2>
+      <p>The app does not create user accounts and the operator does not receive your workout history, favorites, custom routines, reminder choices, or appearance settings. These remain on your device.</p>
+      <p>You can delete all locally stored app data through Android <strong>Settings → Apps → Home Training — No Equipment → Storage → Clear storage</strong>, or by uninstalling the app. For advertising-data requests, use the available in-app ad privacy choices and Google's privacy controls, or contact us at <a href="mailto:ayonmallick123@gmail.com?subject=Privacy%20request">ayonmallick123@gmail.com</a>.</p>
     </section>
 
     <section id="security-retention">
       <h2>Security, retention and international processing</h2>
-      <p>The app disables cleartext network traffic and Android backup, stores sign-in credentials in app-private encrypted storage, and requires server verification before Pro is granted. No method of transmission or storage is completely secure.</p>
-      <p>Local data is retained as described above. Account and entitlement data is kept only as long as needed to provide the service, resolve disputes, prevent fraud and meet legal requirements. Google, Supabase and their subprocessors may process data in countries other than yours using their own legal transfer safeguards.</p>
+      <p>The app disables cleartext network traffic and Android backup. Workout information is stored in the app's private local storage. No method of transmission or storage is completely secure.</p>
+      <p>Local data is retained as described above. Google and its advertising partners may process advertising data in countries other than yours using their own legal transfer safeguards.</p>
       <h3>Legal bases where applicable</h3>
-      <p>We process optional account and subscription data to provide the service you request, comply with legal obligations, and protect the service from abuse. Advertising-related processing is based on consent where the law requires it and otherwise on applicable legitimate interests or other permitted grounds. You may withdraw consent through the available privacy controls without affecting earlier lawful processing.</p>
+      <p>Advertising-related processing is based on consent where the law requires it and otherwise on applicable legitimate interests or other permitted grounds. You may withdraw consent through the available privacy controls without affecting earlier lawful processing.</p>
       <h3>This web page</h3>
       <p>This privacy-policy page is static and does not contain custom analytics, advertising pixels, account forms or cookies set by the app operator. The hosting provider may process standard request logs such as IP address, browser information and access time for delivery, security and abuse prevention under its own terms.</p>
     </section>
 
     <section id="children">
       <h2>Children's privacy</h2>
-      <p>The app is a general-audience fitness product and is not directed to children under 13 or the minimum digital-consent age in their country. The publisher should not select a child-directed Play audience or enable child-directed ad treatment without completing the Google Play Families and AdMob requirements. If you believe a child provided account information, contact us so it can be reviewed and deleted.</p>
+      <p>The app is a general-audience fitness product and is not directed to children under 13 or the minimum digital-consent age in their country. The publisher should not select a child-directed Play audience or enable child-directed ad treatment without completing the Google Play Families and AdMob requirements. If you believe advertising data relating to a child was processed through the app, contact us so the concern can be reviewed.</p>
     </section>
 
     <section id="changes">
@@ -214,7 +209,7 @@
       <h2>Contact</h2>
       <p>Creator, operator and developer: <strong>Ayon Mallick</strong></p>
       <p>Email: <a href="mailto:ayonmallick123@gmail.com">ayonmallick123@gmail.com</a></p>
-      <p>For privacy requests, include the subject “Privacy request” and the email associated with the optional account. Never send passwords, one-time codes, payment card details or secret API keys.</p>
+      <p>For privacy requests, include the subject “Privacy request.” Never send passwords, payment card details, advertising identifiers, or secret API keys by email.</p>
     </section>
   </main>
 
@@ -223,3 +218,4 @@
   </footer>
 </body>
 </html>
+
